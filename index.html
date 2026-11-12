@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morning Moring — Camilan Krispi Bulat Khas Garut | Gurihnya Bikin Nagih!</title>
+  <meta name="description"
+    content="Katalog resmi camilan krispi bulat khas Garut Morning Moring. Tersedia varian rasa Original dan Pedas dalam 3 ukuran kemasan: 100g, 250g, dan 500g. Pesan mudah via WhatsApp!" />
+
+  <!-- OpenGraph & Meta -->
+  <meta property="og:title" content="Morning Moring — Gurihnya Bikin Nagih!" />
+  <meta property="og:description"
+    content="Camilan krispi bulat khas Garut dengan bumbu rempah melimpah. Pesan sekarang!" />
+  <meta property="og:image" content="assets/images/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet" />
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+              950: '#451a03',
+              orange: '#f59e0b',
+              darkOrange: '#ea580c',
+              cream: '#fffbf5',
+              creamCard: '#fff8ee',
+              chocolate: '#451a03',
+              charcoal: '#18181b'
+            }
+          },
+          fontFamily: {
+            heading: ['Fredoka', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-[#FFFDF9] text-zinc-800 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- NAVBAR SECTION (Desktop, Tablet, Mobile Responsive)                   -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Left: Brand Logo & Title -->
+        <a href="#beranda" class="flex items-center gap-3 group">
+          <div
+            class="relative w-12 h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-amber-500 to-amber-300 shadow-md group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.png" alt="Logo Morning Moring"
+              class="w-full h-full object-contain rounded-full bg-white" />
+          </div>
+          <div>
+            <span
+              class="font-heading text-xl sm:text-2xl font-bold tracking-tight text-amber-950 block leading-tight group-hover:text-amber-600 transition-colors">
+              Morning Moring
+            </span>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-700 block">
+              Khas Garut • Gurihnya Nagih
+            </span>
+          </div>
+        </a>
+
+        <!-- Center: Desktop Navigation Links (>= 1024px) -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-zinc-600">
+          <a href="#beranda" class="nav-anchor-link hover:text-amber-600 transition-colors py-1">Beranda</a>
+          <a href="#katalog" class="nav-anchor-link hover:text-amber-600 transition-colors py-1">Produk</a>
+          <a href="#tentang" class="nav-anchor-link hover:text-amber-600 transition-colors py-1">Tentang Kami</a>
+          <a href="#ulasan" class="nav-anchor-link hover:text-amber-600 transition-colors py-1">Ulasan</a>
+          <a href="#faq" class="nav-anchor-link hover:text-amber-600 transition-colors py-1">FAQ</a>
+          <a href="blog.html" class="hover:text-amber-600 transition-colors py-1 flex items-center gap-1.5">
+            <span>Blog</span>
+            <span class="px-1.5 py-0.5 text-[10px] font-bold bg-amber-100 text-amber-800 rounded-full">Artikel</span>
+          </a>
+        </nav>
+
+        <!-- Right: Actions for Desktop & Tablet -->
+        <div class="flex items-center gap-3">
+
+          <!-- Tablet Cart Button (768px - 1023px, placed directly left of hamburger) -->
+          <button id="tablet-cart-btn" type="button" aria-label="Buka Keranjang Belanja"
+            class="hidden md:flex lg:hidden relative items-center justify-center w-11 h-11 rounded-2xl bg-amber-100/80 text-amber-900 hover:bg-amber-200 transition-colors">
+            <i class="fa-solid fa-basket-shopping text-lg"></i>
+            <span
+              class="cart-count-badge absolute -top-1.5 -right-1.5 bg-amber-600 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center shadow-md hidden">0</span>
+          </button>
+
+          <!-- Desktop Cart Button (>= 1024px) -->
+          <button id="desktop-cart-btn" type="button" aria-label="Buka Keranjang Belanja"
+            class="hidden lg:flex relative items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-950 font-semibold text-sm border border-amber-200 shadow-sm transition-all hover:scale-105">
+            <div class="relative">
+              <i class="fa-solid fa-basket-shopping text-base text-amber-600"></i>
+              <span
+                class="cart-count-badge absolute -top-2.5 -right-2.5 bg-amber-600 text-white font-bold text-[11px] w-5 h-5 rounded-full flex items-center justify-center shadow-md hidden">0</span>
+            </div>
+            <span>Keranjang</span>
+          </button>
+
+          <!-- Desktop WhatsApp Direct Contact Button -->
+          <a href="https://wa.me/6283818590784?text=Halo%20Morning%20Moring!%20Saya%20ingin%20tanya-tanya%20seputar%20produk."
+            target="_blank" rel="noopener noreferrer"
+            class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold text-sm shadow-md shadow-amber-500/20 transition-all hover:scale-105">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Chat CS</span>
+          </a>
+
+          <!-- Hamburger Button (Mobile & Tablet < 1024px) -->
+          <button id="hamburger-btn" type="button" aria-label="Buka Menu Navigasi"
+            class="lg:hidden flex items-center justify-center w-11 h-11 rounded-2xl bg-zinc-100 text-zinc-800 hover:bg-amber-100 hover:text-amber-900 transition-colors">
+            <i class="fa-solid fa-bars-staggered text-lg"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- MOBILE SLIDE-OUT MENU DRAWER                                          -->
+  <!-- ===================================================================== -->
+  <div id="mobile-menu-backdrop"
+    class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  </div>
+  <aside id="mobile-menu"
+    class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between pb-5 border-b border-zinc-100">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Morning Moring" class="w-10 h-10 object-contain rounded-full" />
+          <div>
+            <h3 class="font-heading font-bold text-amber-950 text-base">Morning Moring</h3>
+            <span class="text-[11px] text-amber-700 font-medium">Khas Garut Asli</span>
+          </div>
+        </div>
+        <button id="close-mobile-menu" type="button" aria-label="Tutup Menu"
+          class="w-9 h-9 rounded-full bg-zinc-100 text-zinc-500 hover:bg-amber-100 hover:text-amber-900 flex items-center justify-center transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="mt-6 flex flex-col gap-2">
+        <a href="#beranda"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-zinc-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+          <i class="fa-solid fa-house text-amber-500 w-5"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="#katalog"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-zinc-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+          <i class="fa-solid fa-bag-shopping text-amber-500 w-5"></i>
+          <span>Produk</span>
+        </a>
+        <a href="#tentang"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-zinc-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+          <i class="fa-solid fa-award text-amber-500 w-5"></i>
+          <span>Tentang Kami</span>
+        </a>
+        <a href="#ulasan"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-zinc-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+          <i class="fa-solid fa-comments text-amber-500 w-5"></i>
+          <span>Ulasan</span>
+        </a>
+        <a href="#faq"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-zinc-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+          <i class="fa-solid fa-circle-question text-amber-500 w-5"></i>
+          <span>FAQ</span>
+        </a>
+        <a href="blog.html"
+          class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl font-medium text-zinc-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-newspaper text-amber-500 w-5"></i>
+            <span>Blog & Resep</span>
+          </div>
+          <span class="text-[10px] px-2 py-0.5 bg-amber-100 text-amber-800 rounded-full font-bold">Baru</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-zinc-100 space-y-3">
+      <a href="https://wa.me/6283818590784?text=Halo%20Morning%20Moring!%20Saya%20ingin%20tanya-tanya%20seputar%20pemesanan."
+        target="_blank" rel="noopener noreferrer"
+        class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold shadow-md transition-colors">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>Chat WhatsApp Resmi</span>
+      </a>
+      <p class="text-[11px] text-center text-zinc-400">Jam Operasional: 08.00 - 21.00 WIB</p>
+    </div>
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- FLOATING CART BUTTON (Mobile < 768px, Bottom Right Fixed)             -->
+  <!-- ===================================================================== -->
+  <button id="floating-cart-btn" type="button" aria-label="Buka Keranjang Belanja"
+    class="md:hidden fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-xl shadow-amber-500/40 flex items-center justify-center transform active:scale-95 transition-all">
+    <i class="fa-solid fa-basket-shopping text-xl"></i>
+    <span
+      class="cart-count-badge absolute -top-1 -right-1 bg-red-600 text-white font-bold text-[11px] w-5 h-5 rounded-full flex items-center justify-center shadow-md border-2 border-white hidden">0</span>
+  </button>
+
+  <!-- ===================================================================== -->
+  <!-- HERO SECTION                                                          -->
+  <!-- ===================================================================== -->
+  <section id="beranda"
+    class="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 bg-gradient-to-b from-amber-50/70 via-[#FFFDF9] to-[#FFFDF9]">
+
+    <!-- Decorative background elements -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-24 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal-on-scroll">
+
+          <!-- Pill Tag -->
+          <!-- <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-200 text-amber-900 text-xs sm:text-sm font-semibold shadow-sm animate-badge-bounce">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+            <span>Camilan Krispi Bulat Khas Garut Paling Nagih</span>
+          </div> -->
+
+          <!-- Main Headline -->
+          <h1
+            class="font-heading text-4xl sm:text-5xl xl:text-6xl font-bold text-amber-950 tracking-tight leading-[1.15]">
+            Sensasi Kriuk Bulat, <br class="hidden sm:inline" />
+            <span class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
+              Gurihnya Bikin Nagih!!
+            </span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-zinc-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Camilan moring otentik olahan tepung tapioka pilihan khas Garut, berpadu taburan bumbu rempah melimpah.
+            Sekali kress, dijamin susah berhenti!
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#katalog"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold text-base shadow-lg shadow-amber-500/30 transition-all hover:-translate-y-1">
+              <i class="fa-solid fa-utensils"></i>
+              <span>Lihat Produk</span>
+            </a>
+            <a href="https://wa.me/6283818590784?text=Halo%20Morning%20Moring!%20Saya%20ingin%20memesan%20moring%20khas%20Garut."
+              target="_blank" rel="noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-white hover:bg-amber-50 text-amber-950 font-bold text-base border-2 border-amber-300 shadow-sm transition-all hover:-translate-y-1">
+              <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Social Proof -->
+          <div
+            class="pt-6 border-t border-amber-100 flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 text-left">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-base">
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-amber-950">Cemilan Favorit</p>
+                <p class="text-xs text-zinc-500">Favorit Semua Kalangan</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-base">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-amber-950">100% Khas Garut</p>
+                <p class="text-xs text-zinc-500">Bumbu Rempah Alami</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-base">
+                <i class="fa-solid fa-box-open"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-amber-950">Zipper Lock Pouch</p>
+                <p class="text-xs text-zinc-500">Renyah & Tahan Lama</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase Column -->
+        <div class="lg:col-span-5 relative flex items-center justify-center reveal-on-scroll">
+
+          <!-- Outer Ambient Glow -->
+          <div class="w-full max-w-lg aspect-square relative flex items-center justify-center">
+
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-amber-400/20 via-orange-300/20 to-transparent rounded-full filter blur-2xl animate-pulse-subtle">
+            </div>
+
+            <!-- Hero Product Showcase Image -->
+            <img src="assets/images/hero-moring.png" alt="Varian Camilan Morning Moring Khas Garut"
+              class="relative z-10 w-full max-w-md object-contain animate-float drop-shadow-2xl" />
+
+            <!-- Floating Pill 1: Pedas -->
+            <div
+              class="absolute -top-2 right-2 sm:right-6 z-20 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-red-100 flex items-center gap-2.5 animate-float-reverse">
+              <span
+                class="w-8 h-8 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-sm font-bold">
+                <i class="fa-solid fa-fire"></i>
+              </span>
+              <div>
+                <p class="text-xs font-bold text-zinc-900 leading-tight">Pedas</p>
+                <p class="text-[10px] text-zinc-500">Pedesnya Nampol!</p>
+              </div>
+            </div>
+
+            <!-- Floating Pill 2: Original Gurih -->
+            <div
+              class="absolute bottom-6 -left-2 sm:left-4 z-20 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-amber-100 flex items-center gap-2.5 animate-float">
+              <span
+                class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-sm font-bold">
+                <i class="fa-solid fa-bowl-food"></i>
+              </span>
+              <div>
+                <p class="text-xs font-bold text-zinc-900 leading-tight">Original Khas Garut</p>
+                <p class="text-[10px] text-zinc-500">Gurih Asin Wangi</p>
+              </div>
+            </div>
+
+            <!-- Price Starting Badge -->
+            <div
+              class="absolute bottom-2 right-4 z-20 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-2xl shadow-lg border border-amber-300 flex items-center gap-2">
+              <span class="text-xs font-semibold">Mulai</span>
+              <span class="font-heading font-bold text-base">Rp 5.000</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4 VALUE PILLARS SECTION                                               -->
+  <!-- ===================================================================== -->
+  <section class="py-12 bg-white border-y border-amber-100/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div
+          class="p-6 rounded-3xl bg-amber-50/60 border border-amber-100 hover:border-amber-300 transition-all hover:-translate-y-1 reveal-on-scroll">
+          <div
+            class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-xl mb-4 shadow-md shadow-amber-500/20">
+            <i class="fa-solid fa-cookie-bite"></i>
+          </div>
+          <h3 class="font-heading font-bold text-amber-950 text-lg mb-1">Kress Tanpa Keras</h3>
+          <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+            Teknik iris tipis khas Garut menghasilkan moring yang sangat renyah, empuk dikunyah, dan bersahabat untuk
+            gigi.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-3xl bg-amber-50/60 border border-amber-100 hover:border-amber-300 transition-all hover:-translate-y-1 reveal-on-scroll">
+          <div
+            class="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center text-xl mb-4 shadow-md shadow-orange-500/20">
+            <i class="fa-solid fa-pepper-hot"></i>
+          </div>
+          <h3 class="font-heading font-bold text-amber-950 text-lg mb-1">Rempah Pilihan</h3>
+          <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+            Bukan bumbu instan murahan. Kami racik rempah asli yang harum menggugah selera.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-3xl bg-amber-50/60 border border-amber-100 hover:border-amber-300 transition-all hover:-translate-y-1 reveal-on-scroll">
+          <div
+            class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center text-xl mb-4 shadow-md shadow-emerald-500/20">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-heading font-bold text-amber-950 text-lg mb-1">Kemasan Kedap Udara</h3>
+          <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+            Dilengkapi pouch zipper berkualitas tinggi agar kerenyahan moring tetap terjaga maksimal hingga gigitan
+            terakhir.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-3xl bg-amber-50/60 border border-amber-100 hover:border-amber-300 transition-all hover:-translate-y-1 reveal-on-scroll">
+          <div
+            class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-xl mb-4 shadow-md shadow-amber-600/20">
+            <i class="fa-solid fa-fire-burner"></i>
+          </div>
+          <h3 class="font-heading font-bold text-amber-950 text-lg mb-1">Fresh Goreng Harian</h3>
+          <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+            Diproduksi secara berkala langsung dari dapur Garut untuk menjamin kesegaran, kebersihan, dan kenikmatan
+            maksimal.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- KATALOG PILIHAN MORING (EXACTLY 6 PRODUCTS)                            -->
+  <!-- ===================================================================== -->
+  <section id="katalog" class="py-16 md:py-24 bg-[#FFFDF9] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal-on-scroll">
+        <span
+          class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Produk Morning Moring
+        </span>
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-950 tracking-tight">
+          Pilihan Varian Rasa & Ukuran
+        </h2>
+        <p class="mt-4 text-base text-zinc-600">
+          Kombinasi 2 rasa otentik: <strong>Original</strong> yang gurih harum dan <strong>Pedas</strong>
+          yang nendang nagih, tersedia dalam 3 ukuran kemasan hemat.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-8">
+          <button type="button" data-filter="all"
+            class="px-5 py-2.5 rounded-2xl font-bold text-sm bg-amber-500 text-white shadow-md transition-all">
+            Semua Produk (6)
+          </button>
+          <button type="button" data-filter="Original"
+            class="px-5 py-2.5 rounded-2xl font-bold text-sm bg-amber-100/70 text-amber-900 hover:bg-amber-200/80 transition-all">
+            🧂 Varian Original (3)
+          </button>
+          <button type="button" data-filter="Pedas"
+            class="px-5 py-2.5 rounded-2xl font-bold text-sm bg-amber-100/70 text-amber-900 hover:bg-amber-200/80 transition-all">
+            🔥 Varian Pedas (3)
+          </button>
+        </div>
+      </div>
+
+      <!-- 6 Products Grid -->
+      <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 1. Original 100g -->
+        <div class="product-card-wrapper reveal-on-scroll" data-flavor="Original">
+          <div
+            class="product-card h-full flex flex-col justify-between bg-white rounded-3xl p-6 border border-amber-100 shadow-sm hover:shadow-xl relative overflow-hidden group">
+
+            <!-- Top Badges -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+                🧂 Original • 100g
+              </span>
+              <span
+                class="text-xs font-semibold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200/60">
+                Porsi Personal
+              </span>
+            </div>
+
+            <!-- Image Container -->
+            <div
+              class="relative w-full aspect-square bg-gradient-to-b from-amber-50/50 to-amber-100/30 rounded-2xl p-4 flex items-center justify-center mb-5 overflow-hidden">
+              <img src="assets/images/original-100.png" alt="Moring Original 100g"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-bold text-zinc-700 shadow-sm">
+                Netto: 100g
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-xl text-amber-950 group-hover:text-amber-600 transition-colors">
+                  Moring Original (100g)
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-zinc-500 leading-relaxed line-clamp-2">
+                  Camilan renyah bulat khas Garut dengan gurih asin rempah otentik. Pas untuk
+                  santai personal.
+                </p>
+              </div>
+
+              <!-- Price & Actions -->
+              <div class="mt-6 pt-4 border-t border-amber-50">
+                <div class="flex items-baseline justify-between mb-4">
+                  <span class="text-xs text-zinc-400 font-medium">Harga Resmi:</span>
+                  <span class="font-heading font-bold text-2xl text-amber-600">Rp 5.000</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-action="add-to-cart" data-product-id="original-100"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-amber-100 hover:bg-amber-200 text-amber-950 font-bold text-xs sm:text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-amber-600"></i>
+                    <span>+ Keranjang</span>
+                  </button>
+                  <button type="button" data-action="buy-now" data-product-id="original-100"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Beli Sekarang</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. Original 250g -->
+        <div class="product-card-wrapper reveal-on-scroll" data-flavor="Original">
+          <div
+            class="product-card h-full flex flex-col justify-between bg-white rounded-3xl p-6 border-2 border-amber-300 shadow-md hover:shadow-xl relative overflow-hidden group">
+
+            <!-- Best Seller Ribbon -->
+            <div
+              class="absolute -right-12 top-6 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-bold uppercase tracking-wider py-1 px-12 rotate-45 shadow-sm">
+              Favorit
+            </div>
+
+            <!-- Top Badges -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+                🧂 Original • 250g
+              </span>
+              <span
+                class="text-xs font-semibold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200/60">
+                Paling Laris ⭐
+              </span>
+            </div>
+
+            <!-- Image Container -->
+            <div
+              class="relative w-full aspect-square bg-gradient-to-b from-amber-50/50 to-amber-100/30 rounded-2xl p-4 flex items-center justify-center mb-5 overflow-hidden">
+              <img src="assets/images/original-250.png" alt="Moring Original 250g"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-bold text-zinc-700 shadow-sm">
+                Netto: 250g
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-xl text-amber-950 group-hover:text-amber-600 transition-colors">
+                  Moring Original (250g)
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-zinc-500 leading-relaxed line-clamp-2">
+                  Renyahnya bikin nagih! Porsi sedang pas untuk camilan belajar, nonton drakor, atau ngobrol bareng
+                  teman.
+                </p>
+              </div>
+
+              <!-- Price & Actions -->
+              <div class="mt-6 pt-4 border-t border-amber-50">
+                <div class="flex items-baseline justify-between mb-4">
+                  <span class="text-xs text-zinc-400 font-medium">Harga Resmi:</span>
+                  <span class="font-heading font-bold text-2xl text-amber-600">Rp 12.000</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-action="add-to-cart" data-product-id="original-250"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-amber-100 hover:bg-amber-200 text-amber-950 font-bold text-xs sm:text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-amber-600"></i>
+                    <span>+ Keranjang</span>
+                  </button>
+                  <button type="button" data-action="buy-now" data-product-id="original-250"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Beli Sekarang</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3. Original 500g -->
+        <div class="product-card-wrapper reveal-on-scroll" data-flavor="Original">
+          <div
+            class="product-card h-full flex flex-col justify-between bg-white rounded-3xl p-6 border border-amber-100 shadow-sm hover:shadow-xl relative overflow-hidden group">
+
+            <!-- Top Badges -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+                🧂 Original • 500g
+              </span>
+              <span
+                class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">
+                Porsi Jumbo Hemat
+              </span>
+            </div>
+
+            <!-- Image Container -->
+            <div
+              class="relative w-full aspect-square bg-gradient-to-b from-amber-50/50 to-amber-100/30 rounded-2xl p-4 flex items-center justify-center mb-5 overflow-hidden">
+              <img src="assets/images/original-500.png" alt="Moring Original 500g"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-bold text-zinc-700 shadow-sm">
+                Netto: 500g
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-xl text-amber-950 group-hover:text-amber-600 transition-colors">
+                  Moring Original (500g)
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-zinc-500 leading-relaxed line-clamp-2">
+                  Porsi jumbo hemat untuk stok keluarga di rumah atau oleh-oleh khas Garut dengan kemasan zipper tahan
+                  renyah.
+                </p>
+              </div>
+
+              <!-- Price & Actions -->
+              <div class="mt-6 pt-4 border-t border-amber-50">
+                <div class="flex items-baseline justify-between mb-4">
+                  <span class="text-xs text-zinc-400 font-medium">Harga Resmi:</span>
+                  <span class="font-heading font-bold text-2xl text-amber-600">Rp 20.000</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-action="add-to-cart" data-product-id="original-500"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-amber-100 hover:bg-amber-200 text-amber-950 font-bold text-xs sm:text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-amber-600"></i>
+                    <span>+ Keranjang</span>
+                  </button>
+                  <button type="button" data-action="buy-now" data-product-id="original-500"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Beli Sekarang</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. Pedas 100g -->
+        <div class="product-card-wrapper reveal-on-scroll" data-flavor="Pedas">
+          <div
+            class="product-card h-full flex flex-col justify-between bg-white rounded-3xl p-6 border border-red-100 shadow-sm hover:shadow-xl relative overflow-hidden group">
+
+            <!-- Top Badges -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-red-100 text-red-700">
+                🔥 Pedas • 100g
+              </span>
+              <span
+                class="text-xs font-semibold text-red-700 bg-red-50 px-2.5 py-1 rounded-lg border border-red-200/60">
+                Porsi Personal
+              </span>
+            </div>
+
+            <!-- Image Container -->
+            <div
+              class="relative w-full aspect-square bg-gradient-to-b from-red-50/50 to-orange-100/30 rounded-2xl p-4 flex items-center justify-center mb-5 overflow-hidden">
+              <img src="assets/images/pedas-100.png" alt="Moring Pedas 100g"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-bold text-zinc-700 shadow-sm">
+                Netto: 100g
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-xl text-amber-950 group-hover:text-red-600 transition-colors">
+                  Moring Pedas (100g)
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-zinc-500 leading-relaxed line-clamp-2">
+                  Sensasi pedas cabai asli berpadu gurih rempah pilihan. Kriuknya nampol, pedesnya nagih!
+                </p>
+              </div>
+
+              <!-- Price & Actions -->
+              <div class="mt-6 pt-4 border-t border-amber-50">
+                <div class="flex items-baseline justify-between mb-4">
+                  <span class="text-xs text-zinc-400 font-medium">Harga Resmi:</span>
+                  <span class="font-heading font-bold text-2xl text-amber-600">Rp 5.000</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-action="add-to-cart" data-product-id="pedas-100"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-red-50 hover:bg-red-100 text-red-950 font-bold text-xs sm:text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-red-600"></i>
+                    <span>+ Keranjang</span>
+                  </button>
+                  <button type="button" data-action="buy-now" data-product-id="pedas-100"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-red-500/20 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Beli Sekarang</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 5. Pedas 250g -->
+        <div class="product-card-wrapper reveal-on-scroll" data-flavor="Pedas">
+          <div
+            class="product-card h-full flex flex-col justify-between bg-white rounded-3xl p-6 border-2 border-red-300 shadow-md hover:shadow-xl relative overflow-hidden group">
+
+            <!-- Best Seller Ribbon -->
+            <div
+              class="absolute -right-12 top-6 bg-gradient-to-r from-red-600 to-orange-600 text-white text-[10px] font-bold uppercase tracking-wider py-1 px-12 rotate-45 shadow-sm">
+              Best Seller 🔥
+            </div>
+
+            <!-- Top Badges -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-red-100 text-red-700">
+                🔥 Pedas • 250g
+              </span>
+              <span
+                class="text-xs font-semibold text-red-700 bg-red-50 px-2.5 py-1 rounded-lg border border-red-200/60">
+                Paling Dicari 🔥
+              </span>
+            </div>
+
+            <!-- Image Container -->
+            <div
+              class="relative w-full aspect-square bg-gradient-to-b from-red-50/50 to-orange-100/30 rounded-2xl p-4 flex items-center justify-center mb-5 overflow-hidden">
+              <img src="assets/images/pedas-250.png" alt="Moring Pedas 250g"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-bold text-zinc-700 shadow-sm">
+                Netto: 250g
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-xl text-amber-950 group-hover:text-red-600 transition-colors">
+                  Moring Pedas (250g)
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-zinc-500 leading-relaxed line-clamp-2">
+                  Camilan pedas gurih andalan pecinta kriuk. Bumbu rempah tebal meresap sempurna di setiap irisan
+                  moring.
+                </p>
+              </div>
+
+              <!-- Price & Actions -->
+              <div class="mt-6 pt-4 border-t border-amber-50">
+                <div class="flex items-baseline justify-between mb-4">
+                  <span class="text-xs text-zinc-400 font-medium">Harga Resmi:</span>
+                  <span class="font-heading font-bold text-2xl text-amber-600">Rp 12.000</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-action="add-to-cart" data-product-id="pedas-250"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-red-50 hover:bg-red-100 text-red-950 font-bold text-xs sm:text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-red-600"></i>
+                    <span>+ Keranjang</span>
+                  </button>
+                  <button type="button" data-action="buy-now" data-product-id="pedas-250"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-red-500/20 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Beli Sekarang</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 6. Pedas 500g -->
+        <div class="product-card-wrapper reveal-on-scroll" data-flavor="Pedas">
+          <div
+            class="product-card h-full flex flex-col justify-between bg-white rounded-3xl p-6 border border-red-100 shadow-sm hover:shadow-xl relative overflow-hidden group">
+
+            <!-- Top Badges -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-red-100 text-red-700">
+                🔥 Pedas • 500g
+              </span>
+              <span
+                class="text-xs font-semibold text-red-700 bg-red-50 px-2.5 py-1 rounded-lg border border-red-200/60">
+                Porsi Sultan Pedas
+              </span>
+            </div>
+
+            <!-- Image Container -->
+            <div
+              class="relative w-full aspect-square bg-gradient-to-b from-red-50/50 to-orange-100/30 rounded-2xl p-4 flex items-center justify-center mb-5 overflow-hidden">
+              <img src="assets/images/pedas-500.png" alt="Moring Pedas 500g"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-bold text-zinc-700 shadow-sm">
+                Netto: 500g
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-xl text-amber-950 group-hover:text-red-600 transition-colors">
+                  Moring Pedas (500g)
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-zinc-500 leading-relaxed line-clamp-2">
+                  Ukuran jumbo untuk penggila camilan pedas! Nikmati sensasi kriuk kress yang gak berhenti dari awal
+                  sampai habis.
+                </p>
+              </div>
+
+              <!-- Price & Actions -->
+              <div class="mt-6 pt-4 border-t border-amber-50">
+                <div class="flex items-baseline justify-between mb-4">
+                  <span class="text-xs text-zinc-400 font-medium">Harga Resmi:</span>
+                  <span class="font-heading font-bold text-2xl text-amber-600">Rp 20.000</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-action="add-to-cart" data-product-id="pedas-500"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-red-50 hover:bg-red-100 text-red-950 font-bold text-xs sm:text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-red-600"></i>
+                    <span>+ Keranjang</span>
+                  </button>
+                  <button type="button" data-action="buy-now" data-product-id="pedas-500"
+                    class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-2xl bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-red-500/20 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Beli Sekarang</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- TENTANG KAMI (EDITORIAL BRAND STORY & VALUES)                         -->
+  <!-- ===================================================================== -->
+  <section id="tentang" class="py-16 md:py-24 bg-amber-50/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Visual -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="assets/images/about-moring.jpeg" alt="Cerita Produksi Morning Moring Khas Garut"
+              class="w-full h-auto object-cover" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-amber-950/70 via-transparent to-transparent flex items-end p-6 sm:p-8">
+              <div class="text-white">
+                <span
+                  class="inline-block px-3 py-1 bg-amber-500 text-amber-950 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+                  Warisan Kuliner Garut
+                </span>
+                <p class="font-heading font-bold text-lg sm:text-xl">
+                  "Menghadirkan kehangatan dan kerenyahan camilan tradisional dengan standar modern."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Editorial Narrative -->
+        <div class="lg:col-span-7 space-y-6 reveal-on-scroll">
+
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-seedling text-amber-600"></i>
+            <span>Cerita di Balik Morning Moring</span>
+          </div>
+
+          <h2
+            class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-950 tracking-tight leading-tight">
+            Dari Dapur Tradisional Garut Menuju Selera Pecinta Ngemil Nusantara
+          </h2>
+
+          <p class="text-zinc-600 text-base leading-relaxed">
+            <strong>Moring (Cimol Kering)</strong> adalah camilan legendaris khas Kabupaten Garut, Jawa Barat.
+            Terinspirasi dari kerinduan akan kerenyahan moring tempo dulu yang gurih tanpa membuat gigi sakit,
+            <strong>Morning Moring</strong> lahir dengan dedikasi untuk menyempurnakan resep tradisional tersebut.
+          </p>
+
+          <p class="text-zinc-600 text-base leading-relaxed">
+            Kami mengombinasikan tepung tapioka kualitas terbaik, rempah bawang asli pilihan,
+            dan cabai kering alami. Setiap butir diiris dengan presisi ketebalan optimal agar menghasilkan tekstur
+            <em>"Kress-Renyah"</em> yang empuk namun tetap garing tiada tanding.
+          </p>
+
+          <!-- 3 Highlight Stats -->
+          <div class="grid grid-cols-3 gap-4 pt-4">
+            <div class="p-4 rounded-2xl bg-white border border-amber-100 shadow-sm text-center">
+              <p class="font-heading font-bold text-2xl sm:text-3xl text-amber-600">35.000+</p>
+              <p class="text-xs text-zinc-500 mt-1 font-medium">Bungkus Terjual</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-amber-100 shadow-sm text-center">
+              <p class="font-heading font-bold text-2xl sm:text-3xl text-amber-600">99.8%</p>
+              <p class="text-xs text-zinc-500 mt-1 font-medium">Ulasan Positif</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-amber-100 shadow-sm text-center">
+              <p class="font-heading font-bold text-2xl sm:text-3xl text-amber-600">2 Rasa</p>
+              <p class="text-xs text-zinc-500 mt-1 font-medium">Original & Pedas</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ULASAN PELANGGAN (AUTHENTIC WHATSAPP SCREENSHOT CAROUSEL & LIGHTBOX)  -->
+  <!-- ===================================================================== -->
+  <section id="ulasan" class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal-on-scroll">
+        <div class="max-w-2xl">
+          <span
+            class="inline-block px-4 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-brands fa-whatsapp text-emerald-600 mr-1"></i> Screenshot Chat WhatsApp Asli
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-950 tracking-tight">
+            Bukti Kepuasan Pelanggan Kami
+          </h2>
+          <p class="mt-3 text-base text-zinc-600">
+            Kami tidak mengarang testimoni fiktif. Berikut adalah dokumentasi tangkapan layar percakapan langsung dari
+            pelanggan setia Morning Moring. Klik untuk memperbesar screenshot!
+          </p>
+        </div>
+
+        <!-- Carousel Nav Buttons -->
+        <div class="flex items-center gap-3">
+          <button id="reviews-prev" type="button" aria-label="Ulasan Sebelumnya"
+            class="w-12 h-12 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-950 flex items-center justify-center border border-amber-200 transition-colors shadow-sm">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="reviews-next" type="button" aria-label="Ulasan Selanjutnya"
+            class="w-12 h-12 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white flex items-center justify-center transition-colors shadow-md shadow-amber-500/20">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Track -->
+      <div id="reviews-carousel"
+        class="flex gap-6 overflow-x-auto no-scrollbar pb-6 scroll-smooth snap-x snap-mandatory">
+
+        <!-- Review Card 1 -->
+        <div class="flex-none w-[280px] sm:w-[320px] snap-center">
+          <div data-action="open-lightbox" data-image="assets/reviews/review-1.jpeg"
+            data-caption="Chat Pelanggan: Siti Nurhaliza (Cirebon) — Moring nya udah nyampe mekah🤭"
+            class="cursor-pointer group bg-zinc-50 rounded-3xl overflow-hidden border border-zinc-200 hover:border-emerald-400 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] bg-zinc-200 overflow-hidden">
+              <img src="assets/reviews/review-1.jpeg" alt="Screenshot Testimoni WhatsApp 1"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                <span
+                  class="bg-black/60 px-4 py-2 rounded-xl text-xs font-bold backdrop-blur-sm flex items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> Klik untuk Perbesar
+                </span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <div class="flex items-center gap-2 text-emerald-600 text-xs font-bold mb-1">
+                <i class="fa-brands fa-whatsapp"></i> Siti Nurhaliza (Cirebon)
+              </div>
+              <p class="text-xs text-zinc-600 line-clamp-2">
+                "Moring nya udah nyampe mekkah🤭, Semoga ownernya nyusul ke mekkah"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="flex-none w-[280px] sm:w-[320px] snap-center">
+          <div data-action="open-lightbox" data-image="assets/reviews/review-2.jpeg"
+            data-caption="Chat Pelanggan: Dimas Pratama (Cirebon) — Enakk lohh.. asin, gurih, renyah, gak keras sama sekali, pedesnya juga pas, bakal cepet abis ini mah🙌"
+            class="cursor-pointer group bg-zinc-50 rounded-3xl overflow-hidden border border-zinc-200 hover:border-emerald-400 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] bg-zinc-200 overflow-hidden">
+              <img src="assets/reviews/review-2.jpeg" alt="Screenshot Testimoni WhatsApp 2"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                <span
+                  class="bg-black/60 px-4 py-2 rounded-xl text-xs font-bold backdrop-blur-sm flex items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> Klik untuk Perbesar
+                </span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <div class="flex items-center gap-2 text-emerald-600 text-xs font-bold mb-1">
+                <i class="fa-brands fa-whatsapp"></i> Dimas Pratama (Cirebon)
+              </div>
+              <p class="text-xs text-zinc-600 line-clamp-2">
+                "Enakk lohh.. asin, gurih, renyah, gak keras sama sekali, pedesnya juga pas, bakal cepet abis ini mah🙌"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="flex-none w-[280px] sm:w-[320px] snap-center">
+          <div data-action="open-lightbox" data-image="assets/reviews/review-3.jpeg"
+            data-caption="Chat Pelanggan: _secretdesin (Kuningan) — Nagih banget moringnya"
+            class="cursor-pointer group bg-zinc-50 rounded-3xl overflow-hidden border border-zinc-200 hover:border-emerald-400 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] bg-zinc-200 overflow-hidden">
+              <img src="assets/reviews/review-3.jpeg" alt="Screenshot Testimoni WhatsApp 3"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                <span
+                  class="bg-black/60 px-4 py-2 rounded-xl text-xs font-bold backdrop-blur-sm flex items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> Klik untuk Perbesar
+                </span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <div class="flex items-center gap-2 text-emerald-600 text-xs font-bold mb-1">
+                <i class="fa-brands fa-whatsapp"></i> _secretdesin (Kuningan)
+              </div>
+              <p class="text-xs text-zinc-600 line-clamp-2">
+                "Nagih bgtt sampe anak kecil jg suka😍 berawal dari beli yang 5rb, terus 1/4, terus sekarang beli yg
+                1/2kg, sangat-sangat nagih😍"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 4 -->
+        <div class="flex-none w-[280px] sm:w-[320px] snap-center">
+          <div data-action="open-lightbox" data-image="assets/reviews/review-4.jpeg"
+            data-caption="Chat Pelanggan: Rizky Ramadhan (Majalengka) — Enak buat nemenin begadang"
+            class="cursor-pointer group bg-zinc-50 rounded-3xl overflow-hidden border border-zinc-200 hover:border-emerald-400 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] bg-zinc-200 overflow-hidden">
+              <img src="assets/reviews/review-4.jpeg" alt="Screenshot Testimoni WhatsApp 4"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                <span
+                  class="bg-black/60 px-4 py-2 rounded-xl text-xs font-bold backdrop-blur-sm flex items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> Klik untuk Perbesar
+                </span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <div class="flex items-center gap-2 text-emerald-600 text-xs font-bold mb-1">
+                <i class="fa-brands fa-whatsapp"></i> Rizky Ramadhan (Majalengka)
+              </div>
+              <p class="text-xs text-zinc-600 line-clamp-2">
+                "Biasanya kita makan siang di kampus, ternyata buat nemenin begadang enak juga cooo😍😍😍"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 5 -->
+        <div class="flex-none w-[280px] sm:w-[320px] snap-center">
+          <div data-action="open-lightbox" data-image="assets/reviews/review-5.jpeg"
+            data-caption="Chat Pelanggan: Anita (Tangerang) — rasanya gurihh bikin nagih"
+            class="cursor-pointer group bg-zinc-50 rounded-3xl overflow-hidden border border-zinc-200 hover:border-emerald-400 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] bg-zinc-200 overflow-hidden">
+              <img src="assets/reviews/review-5.jpeg" alt="Screenshot Testimoni WhatsApp 5"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy" />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                <span
+                  class="bg-black/60 px-4 py-2 rounded-xl text-xs font-bold backdrop-blur-sm flex items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> Klik untuk Perbesar
+                </span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <div class="flex items-center gap-2 text-emerald-600 text-xs font-bold mb-1">
+                <i class="fa-brands fa-whatsapp"></i> Anita (Tangerang)
+              </div>
+              <p class="text-xs text-zinc-600 line-clamp-2">
+                "enak bgt moring nya sikaa😍 rasanya gurih bkin nagih😍😋 harganya juga murah meriah muncratt😍"
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FAQ ACCORDION SECTION                                                 -->
+  <!-- ===================================================================== -->
+  <section id="faq" class="py-16 md:py-24 bg-amber-50/50 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center mb-12 reveal-on-scroll">
+        <span
+          class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Pertanyaan Umum
+        </span>
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-950 tracking-tight">
+          FAQ Seputar Morning Moring
+        </h2>
+        <p class="mt-3 text-base text-zinc-600">
+          Temukan jawaban cepat mengenai varian rasa, harga, pemesanan, dan cara penyimpanan.
+        </p>
+      </div>
+
+      <!-- Accordion Container -->
+      <div class="space-y-4 reveal-on-scroll">
+
+        <!-- FAQ Item 1 -->
+        <div
+          class="accordion-item bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-sm transition-all">
+          <button type="button"
+            class="accordion-trigger w-full flex items-center justify-between p-5 text-left font-bold text-amber-950 hover:text-amber-600 transition-colors">
+            <span class="text-base sm:text-lg">1. Apa itu Morning Moring dan apa keunggulannya?</span>
+            <i
+              class="accordion-icon fa-solid fa-chevron-down text-amber-500 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 text-sm text-zinc-600 leading-relaxed border-t border-amber-50 pt-3">
+              Morning Moring adalah camilan olahan tapioka khas Garut (Cimol Kering) yang disajikan dengan bumbu rempah
+              otentik. Keunggulannya ada pada teknik iris tipis sehingga menghasilkan tekstur yang
+              ekstra renyah, empuk, dan tidak keras di gigi, serta dikemas dengan pouch zipper kedap udara.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div
+          class="accordion-item bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-sm transition-all">
+          <button type="button"
+            class="accordion-trigger w-full flex items-center justify-between p-5 text-left font-bold text-amber-950 hover:text-amber-600 transition-colors">
+            <span class="text-base sm:text-lg">2. Apa perbedaan rasa Original dan Pedas?</span>
+            <i
+              class="accordion-icon fa-solid fa-chevron-down text-amber-500 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 text-sm text-zinc-600 leading-relaxed border-t border-amber-50 pt-3">
+              Varian <strong>Original</strong> mengedepankan cita rasa gurih asin rempah bawang yang harum berpadu daun
+              jeruk segar, sangat bersahabat untuk anak-anak dan yang tidak tahan pedas. Sedangkan varian
+              <strong>Pedas</strong> menggunakan cabai kering pilihan dengan sensasi pedas gurih nampol yang bikin melek
+              dan ketagihan!
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div
+          class="accordion-item bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-sm transition-all">
+          <button type="button"
+            class="accordion-trigger w-full flex items-center justify-between p-5 text-left font-bold text-amber-950 hover:text-amber-600 transition-colors">
+            <span class="text-base sm:text-lg">3. Berapa ukuran kemasan dan harganya?</span>
+            <i
+              class="accordion-icon fa-solid fa-chevron-down text-amber-500 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 text-sm text-zinc-600 leading-relaxed border-t border-amber-50 pt-3 space-y-2">
+              <p>Tersedia dalam 3 pilihan ukuran kemasan:</p>
+              <ul class="list-disc list-inside space-y-1 font-medium text-amber-900">
+                <li>Ukuran 100 gram: <strong>Rp 5.000</strong></li>
+                <li>Ukuran 250 gram: <strong>Rp 12.000</strong></li>
+                <li>Ukuran 500 gram: <strong>Rp 20.000</strong></li>
+              </ul>
+              <p class="text-xs text-zinc-500 pt-1">*Harga sama untuk varian rasa Original maupun Pedas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div
+          class="accordion-item bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-sm transition-all">
+          <button type="button"
+            class="accordion-trigger w-full flex items-center justify-between p-5 text-left font-bold text-amber-950 hover:text-amber-600 transition-colors">
+            <span class="text-base sm:text-lg">4. Bagaimana cara pemesanan dan checkout?</span>
+            <i
+              class="accordion-icon fa-solid fa-chevron-down text-amber-500 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 text-sm text-zinc-600 leading-relaxed border-t border-amber-50 pt-3">
+              Anda dapat memilih produk ke keranjang dan menekan tombol <strong>Checkout via WhatsApp</strong>, atau
+              langsung menekan tombol <strong>Beli Sekarang</strong> pada kartu produk. Sistem akan otomatis menyusun
+              rincian pesanan rapi ke pesan WhatsApp resmi kami di <code>0888-6034-589</code>.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div
+          class="accordion-item bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-sm transition-all">
+          <button type="button"
+            class="accordion-trigger w-full flex items-center justify-between p-5 text-left font-bold text-amber-950 hover:text-amber-600 transition-colors">
+            <span class="text-base sm:text-lg">5. Apa saja metode pembayaran yang didukung?</span>
+            <i
+              class="accordion-icon fa-solid fa-chevron-down text-amber-500 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 text-sm text-zinc-600 leading-relaxed border-t border-amber-50 pt-3">
+              Kami menerima Transfer Bank (BCA, Mandiri, BRI, BNI), QRIS instan seluruh e-wallet (GoPay, OVO, DANA,
+              ShopeePay), serta pengiriman COD (Cash on Delivery) untuk kurir tertentu.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div
+          class="accordion-item bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-sm transition-all">
+          <button type="button"
+            class="accordion-trigger w-full flex items-center justify-between p-5 text-left font-bold text-amber-950 hover:text-amber-600 transition-colors">
+            <span class="text-base sm:text-lg">6. Berapa lama moring tahan renyah dan tips menyimpannya?</span>
+            <i
+              class="accordion-icon fa-solid fa-chevron-down text-amber-500 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 text-sm text-zinc-600 leading-relaxed border-t border-amber-50 pt-3">
+              Morning Moring bertahan renyah hingga <strong>3 bulan</strong> dalam kemasan bersegel rapat. Setelah
+              dibuka, selalu rapatkan kembali zipper lock pouch dan simpan di suhu ruang yang sejuk serta hindari sinar
+              matahari langsung.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- HIGH ENERGY CTA BANNER SECTION                                        -->
+  <!-- ===================================================================== -->
+  <section
+    class="py-16 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="max-w-3xl mx-auto space-y-6">
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+          Siap Rasakan Gurih Renyahnya yang Bikin Nagih?
+        </h2>
+        <p class="text-base sm:text-lg text-amber-100 font-normal">
+          Jangan tunggu kehabisan! Pesan sekarang untuk menemani waktu santai, kerja, nobar film, atau oleh-oleh spesial
+          keluarga.
+        </p>
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#katalog"
+            class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white text-amber-950 font-bold text-base hover:bg-amber-50 shadow-xl transition-all hover:scale-105">
+            Pilih Varian Produk
+          </a>
+          <a href="https://wa.me/6283818590784?text=Halo%20Morning%20Moring!%20Saya%20ingin%20pesan%20sekarang."
+            target="_blank" rel="noopener noreferrer"
+            class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-emerald-600 text-white font-bold text-base hover:bg-emerald-700 shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>Chat CS Langsung</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER                                                                -->
+  <!-- ===================================================================== -->
+  <footer class="bg-amber-950 text-amber-100/80 pt-16 pb-12 border-t border-amber-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-900/60">
+
+        <!-- Col 1: Brand Info (2 cols wide) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.png" alt="Morning Moring" class="w-12 h-12 rounded-full bg-white p-0.5" />
+            <div>
+              <span class="font-heading font-bold text-2xl text-white block">Morning Moring</span>
+              <span class="text-xs text-amber-400 font-semibold tracking-wider uppercase">Camilan Khas Garut</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-amber-200/70 leading-relaxed max-w-sm">
+            Camilan krispi bulat otentik olahan tapioka pilihan bertabur bumbu rempah melimpah dan harum. Gurihnya Bikin
+            Nagih!
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/morningmoring_?cplk=MWYzODYwMHg1eDQ0cg==" target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-300 flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+            <a href="https://id.shp.ee/PqvRyc1i" target="_blank" rel="noopener noreferrer"
+              class="w-10 h-10 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-300 flex items-center justify-center transition-colors">
+              <i class="fa-solid fa-bag-shopping text-lg"></i>
+            </a>
+            <a href="https://wa.me/6283818590784" target="_blank" rel="noopener noreferrer"
+              class="w-10 h-10 rounded-xl bg-emerald-700/80 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">Menu Navigasi</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#beranda" class="hover:text-amber-400 transition-colors">Beranda</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Produk</a></li>
+            <li><a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang Kami</a></li>
+            <li><a href="#ulasan" class="hover:text-amber-400 transition-colors">Ulasan</a></li>
+            <li><a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a></li>
+            <li><a href="blog.html" class="hover:text-amber-400 transition-colors">Blog Artikel</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Variants -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">Varian Produk</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Original 100g (Rp 5.000)</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Original 250g (Rp 12.000)</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Original 500g (Rp 20.000)</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Pedas 100g (Rp 5.000)</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Pedas 250g (Rp 12.000)</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Pedas 500g (Rp 20.000)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">Kontak & Lokasi</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-amber-200/80">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+              <span>Garut, Jawa Barat, Indonesia</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <a href="https://wa.me/6283818590784" class="hover:text-white transition-colors">0888-6034-589</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-clock text-amber-400"></i>
+              <span>Setiap Hari: 08.00 - 21.00 WIB</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-amber-300/60">
+        <p>© <span class="dynamic-year">2026</span> Morning Moring. Seluruh Hak Cipta Dilindungi.</p>
+        <p>Khas Garut • Gurihnya Bikin Nagih!!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- SHOPPING CART SLIDE-OVER DRAWER MODAL                                 -->
+  <!-- ===================================================================== -->
+  <div id="cart-overlay"
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  </div>
+  <aside id="cart-drawer"
+    class="fixed top-0 right-0 w-full sm:w-[450px] max-w-full h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col justify-between">
+
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-amber-100 flex items-center justify-between bg-amber-50/60">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-lg shadow-sm">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <div>
+          <h3 class="font-heading font-bold text-amber-950 text-lg">Keranjang Belanja</h3>
+          <span id="cart-drawer-count" class="text-xs text-amber-700 font-medium">0 item</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="clear-cart-btn" type="button" aria-label="Kosongkan Keranjang"
+          class="text-xs text-zinc-400 hover:text-red-500 p-2 transition-colors" title="Kosongkan Keranjang">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+        <button id="close-cart-btn" type="button" aria-label="Tutup Keranjang"
+          class="w-9 h-9 rounded-full bg-white border border-amber-200 text-zinc-600 hover:bg-amber-100 flex items-center justify-center transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Drawer Items List -->
+    <div class="flex-1 overflow-y-auto p-5 space-y-3">
+
+      <!-- Empty State -->
+      <div id="cart-empty-state"
+        class="hidden h-full flex flex-col items-center justify-center text-center p-6 space-y-4">
+        <div class="w-24 h-24 rounded-full bg-amber-50 text-amber-400 flex items-center justify-center text-4xl">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-amber-950 text-lg">Keranjang Masih Kosong</h4>
+          <p class="text-xs text-zinc-500 mt-1 max-w-xs">
+            Yuk pilih varian rasa dan ukuran moring favoritmu di katalog sekarang!
+          </p>
+        </div>
+        <button id="start-shopping-btn" type="button"
+          class="px-6 py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm shadow-md transition-all">
+          Mulai Belanja
+        </button>
+      </div>
+
+      <!-- Dynamically Injected Cart Items -->
+      <div id="cart-items-container" class="space-y-3"></div>
+
+    </div>
+
+    <!-- Drawer Footer (Subtotal & WhatsApp Checkout) -->
+    <div id="cart-footer" class="p-5 border-t border-amber-100 bg-amber-50/40 space-y-4">
+      <div class="flex items-baseline justify-between">
+        <span class="text-sm font-semibold text-zinc-600">Total Belanja:</span>
+        <span id="cart-total-price" class="font-heading font-bold text-2xl text-amber-600">Rp 0</span>
+      </div>
+
+      <p class="text-[11px] text-zinc-500 text-center leading-tight">
+        *Ongkos kirim akan dihitung oleh CS kami saat konfirmasi via WhatsApp.
+      </p>
+
+      <button id="checkout-whatsapp-btn" type="button"
+        class="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-base shadow-lg shadow-emerald-500/25 transition-all active:scale-95">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span>Checkout via WhatsApp</span>
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- LIGHTBOX MODAL FOR REVIEW SCREENSHOTS                                 -->
+  <!-- ===================================================================== -->
+  <div id="lightbox-modal"
+    class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="relative max-w-xl w-full bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-zinc-700">
+
+      <div class="flex items-center justify-between p-4 border-b border-zinc-800">
+        <span id="lightbox-caption" class="text-xs sm:text-sm font-semibold text-zinc-300 truncate pr-4">
+          Screenshot Ulasan WhatsApp
+        </span>
+        <button id="close-lightbox-btn" type="button" aria-label="Tutup Screenshot"
+          class="w-8 h-8 rounded-full bg-zinc-800 text-zinc-300 hover:text-white hover:bg-zinc-700 flex items-center justify-center transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-2 sm:p-4 max-h-[75vh] flex items-center justify-center overflow-auto bg-black/40">
+        <img id="lightbox-image" src="" alt="Bukti Chat WhatsApp"
+          class="max-h-[70vh] w-auto object-contain rounded-xl" />
+      </div>
+
+      <div class="p-3 bg-zinc-900 text-center text-[11px] text-zinc-400 border-t border-zinc-800">
+        Tangkapan layar asli percakapan pemesanan via WhatsApp Morning Moring.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container handled by script.js -->
+
+  <!-- External JavaScript ONLY (No inline script) -->
+  <script src="script.js"></script>
+</body>
+
+</html>
