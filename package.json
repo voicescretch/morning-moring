@@ -1,9 +1,11 @@
+
 {
   "name": "morning-moring",
   "version": "1.0.0",
   "description": "Website resmi katalog camilan krispi bulat khas Garut Morning Moring",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "npx @tailwindcss/cli -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind.css --minify"
   },
   "keywords": [
     "morning-moring",
