@@ -2,9 +2,8 @@
   "name": "morning-moring",
   "version": "1.0.0",
   "description": "Website resmi katalog camilan krispi bulat khas Garut Morning Moring",
-  "main": "index.html",
   "scripts": {
-    "start": "node server.js"
+    "dev": "node server.js"
   },
   "keywords": ["morning-moring", "moring-garut", "camilan", "kuliner-indonesia"],
   "author": "Morning Moring",
