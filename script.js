@@ -35,7 +35,7 @@ const PRODUCTS = [
     name: "Moring Original",
     flavor: "Original",
     size: "500g",
-    price: 20000,
+    price: 22000,
     image: "assets/images/original-500.png",
     description: "Porsi jumbo hemat untuk stok keluarga di rumah atau oleh-oleh khas Garut dengan kemasan zipper tahan renyah.",
     badge: "Paling Hemat"
@@ -65,7 +65,7 @@ const PRODUCTS = [
     name: "Moring Pedas",
     flavor: "Pedas",
     size: "500g",
-    price: 20000,
+    price: 22000,
     image: "assets/images/pedas-500.png",
     description: "Ukuran jumbo untuk penggila camilan pedas! Nikmati sensasi kriuk kress yang gak berhenti dari awal sampai habis.",
     badge: "Porsi Sultan 🔥"
