@@ -5,7 +5,16 @@
   "scripts": {
     "dev": "node server.js"
   },
-  "keywords": ["morning-moring", "moring-garut", "camilan", "kuliner-indonesia"],
+  "keywords": [
+    "morning-moring",
+    "moring-garut",
+    "camilan",
+    "kuliner-indonesia"
+  ],
   "author": "Morning Moring",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
 }
